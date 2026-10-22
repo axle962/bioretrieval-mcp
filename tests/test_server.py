@@ -61,6 +61,9 @@ async def test_lists_all_tools_with_schemas(server):
     assert geo_props["platform"]["enum"] == ["27K", "450K", "EPIC", "EPICv2"]
     assert tools["search_geo_methylation"].input_schema["required"] == ["query", "platform"]
     assert tools["retrieve_maps"].input_schema["properties"]["k"]["maximum"] == 50
+    # Agents need to know which part of a long sequence is kept (q31 in the eval had to guess).
+    for name in ("embed_sequence", "retrieve_maps"):
+        assert "first 1022 residues" in tools[name].description
     assert tools["search_emdb"].input_schema["properties"]["resolution_max"]["anyOf"][0]["exclusiveMinimum"] == 0
 
 

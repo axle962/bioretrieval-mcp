@@ -181,7 +181,8 @@ def create_server(
         ) -> SequenceEmbedding:
             """Compute an ESM-2 650M (esm2_t33_650M_UR50D) embedding: final-layer residue
             representations mean-pooled to 1280 dims. Sequences longer than 1022 residues are
-            truncated. Results are cached on disk by sequence hash."""
+            truncated to their first 1022 residues (N-terminus kept, C-terminal remainder dropped).
+            Results are cached on disk by sequence hash."""
             from bioretrieval_mcp.ml.esm import sequence_key
 
             try:
@@ -214,7 +215,8 @@ def create_server(
             """Rank indexed cryo-EM density maps by similarity to a protein sequence using the
             two-tower sequence/map retrieval model (ESM-2 sequence tower, 3D-CNN volume tower,
             shared latent space). Scores are cosine similarities; higher is better. Each hit
-            includes the UniProt accession the map is paired with in the index."""
+            includes the UniProt accession the map is paired with in the index. Like
+            embed_sequence, only the first 1022 residues of the query are used."""
             try:
                 seq = normalize_sequence(sequence)
                 hits = await anyio.to_thread.run_sync(retriever.search, seq, k)

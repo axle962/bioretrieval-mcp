@@ -192,9 +192,9 @@ three problems with the eval, not the agent, which are fixed in `questions.jsonl
    so calling that tool became optional. Faithfulness now also counts tool descriptions as context, since the
    agent legitimately reads them.
 
-The agent was not re-run; only the grading changed. The eval also surfaced a product fix:
-`embed_sequence`'s description does not say *which* 1,022 residues it keeps (it keeps the first), so in q31 the
-agent had to guess.
+The agent was not re-run; only the grading changed. The eval also surfaced a product fix: in q31 the agent had
+to guess *which* 1,022 residues `embed_sequence` keeps. The `embed_sequence` and `retrieve_maps` descriptions now
+state that the first 1,022 are kept (fixed after this run, so the run above used the old wording).
 
 ## Layout
 

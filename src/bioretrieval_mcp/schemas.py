@@ -55,7 +55,7 @@ class UniProtEntry(BaseModel):
 class SequenceEmbedding(BaseModel):
     model: str
     length: int = Field(description="Residues embedded (after truncation)")
-    truncated: bool = Field(description="True if the sequence exceeded ESM-2's 1022-residue window")
+    truncated: bool = Field(description="True if the sequence exceeded ESM-2's 1022-residue window; only the first 1022 residues were embedded")
     dim: int
     pooling: str
     cached: bool
