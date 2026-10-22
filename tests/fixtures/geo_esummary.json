@@ -1,0 +1,104 @@
+{
+ "header": {
+  "type": "esummary",
+  "version": "0.3"
+ },
+ "result": {
+  "uids": [
+   "200144858",
+   "200156994"
+  ],
+  "200144858": {
+   "uid": "200144858",
+   "accession": "GSE144858",
+   "gds": "",
+   "title": "An epigenome-wide association study of Alzheimer\u2019s disease blood highlights robust DNA hypermethylation in the HOXB6 gene.",
+   "summary": "Alzheimer case-control samples originate from the EU funded AddNeuroMed Cohort, which is a large cross-European AD biomarker study relying on human blood as the source of DNA.",
+   "gpl": "13534",
+   "gse": "144858",
+   "taxon": "Homo sapiens",
+   "entrytype": "GSE",
+   "gdstype": "Methylation profiling by genome tiling array",
+   "ptechtype": "",
+   "valtype": "",
+   "ssinfo": "",
+   "subsetinfo": "",
+   "pdat": "2020/11/18",
+   "suppfile": "CSV",
+   "samples": [
+    {
+     "accession": "GSM4299247",
+     "title": "Genomic DNA from blood 46"
+    },
+    {
+     "accession": "GSM4299367",
+     "title": "Genomic DNA from blood 78"
+    },
+    {
+     "accession": "GSM4299413",
+     "title": "Genomic DNA from blood 124"
+    }
+   ],
+   "relations": [],
+   "extrelations": [],
+   "n_samples": 300,
+   "seriestitle": "",
+   "platformtitle": "",
+   "platformtaxa": "",
+   "samplestaxa": "",
+   "pubmedids": [
+    "32745807"
+   ],
+   "projects": [],
+   "ftplink": "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE144nnn/GSE144858/",
+   "geo2r": "yes",
+   "bioproject": "PRJNA605174"
+  },
+  "200156994": {
+   "uid": "200156994",
+   "accession": "GSE156994",
+   "gds": "",
+   "title": "Altered DNA methylation profiles in blood from patients with sporadic Creutzfeldt-Jakob disease",
+   "summary": "Prion diseases are fatal and transmissible neurodegenerative disorders caused by the misfolding and aggregation of prion protein. Although recent studies have implicated epigenetic variation in common neurodegenerative disorders, no study has yet explored their role in human prion diseases. Here we profiled genome-wide blood DNA methylation in the most common human prion disease, sporadic Creutzfeldt-Jakob disease (sCJD). Our case-control study (n=219), when accounting for differences in cell type composition between individuals, identified 38 probes at genome-wide significance (p\u2009<\u20091.24x10-7). Nine of these sites were taken forward in a replication study, performed in an independent case-control (n=186) cohort using pyrosequencing. Sites in or close to FKBP5, AIM2 (2 probes), UHRF1, KCNAB2, PRNP, ANK1 successfully replicated. The blood-based DNA methylation signal was tissue- and disease-specific, in that the replicated probe signals were unchanged in case-control studies using sCJD frontal-cortex (n=84), blood samples from patients with Alzheimer\u2019s disease, and from inherited and acquired prion diseases. Machine learning algorithms using blood DNA methylation array profiles accurately distinguished sCJD patients and controls. Finally, we identified sites whose methylation levels associated with prolonged survival in sCJD patients. Altogether, this study has identified a peripheral DNA methylation signature of sCJD with a variety of potential biomarker applications.",
+   "gpl": "13534",
+   "gse": "156994",
+   "taxon": "Homo sapiens",
+   "entrytype": "GSE",
+   "gdstype": "Methylation profiling by genome tiling array",
+   "ptechtype": "",
+   "valtype": "",
+   "ssinfo": "",
+   "subsetinfo": "",
+   "pdat": "2020/10/19",
+   "suppfile": "CSV, IDAT",
+   "samples": [
+    {
+     "accession": "GSM4750048",
+     "title": "sCJD98"
+    },
+    {
+     "accession": "GSM4749965",
+     "title": "sCJD15"
+    },
+    {
+     "accession": "GSM4750002",
+     "title": "sCJD52"
+    }
+   ],
+   "relations": [],
+   "extrelations": [],
+   "n_samples": 219,
+   "seriestitle": "",
+   "platformtitle": "",
+   "platformtaxa": "",
+   "samplestaxa": "",
+   "pubmedids": [
+    "32918118"
+   ],
+   "projects": [],
+   "ftplink": "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE156nnn/GSE156994/",
+   "geo2r": "yes",
+   "bioproject": "PRJNA659744"
+  }
+ }
+}
